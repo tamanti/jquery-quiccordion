@@ -72,6 +72,7 @@
                       });
                       _openItems($(this).children('ul'));
                     }
+                    return false; // No more '#' in address bar
                 });
                //if it's in the active tree don't hide it
                if($(this).find(options.activeClass).length == 0 && depth > options.openLevel)
